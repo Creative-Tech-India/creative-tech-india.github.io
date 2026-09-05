@@ -2,7 +2,7 @@
 
 A curated directory and open index of organizations, studios, experimental labs, academic institutions, festivals, and practitioners working at the intersection of art, design, science, and computing across India.
 
-🌐 **Live Website:** [https://allwinwilliams.github.io/creative-tech-india/](https://allwinwilliams.github.io/creative-tech-india/)
+🌐 **Live Website:** [https://creative-tech-india.github.io/](https://creative-tech-india.github.io/)
 
 ---
 
@@ -23,7 +23,7 @@ The directory captures initiatives across key disciplines:
 
 This directory is an open community initiative. If you run a studio, collective, lab, or event—or know someone who does:
 
-1. **Submit via Issue:** [Open an Issue](https://github.com/allwinwilliams/creative-tech-india/issues/new) with the name, category, location, and website or contact link.
+1. **Submit via Issue:** [Open an Issue](https://github.com/Creative-Tech-India/creative-tech-india.github.io/issues/new) with the name, category, location, and website or contact link.
 2. **Submit via Pull Request:**
    - Add your entry to `DIRECTORY_DATA` in `index.html`.
    - Submit a pull request.
@@ -32,10 +32,8 @@ This directory is an open community initiative. If you run a studio, collective,
 
 ## 🚀 GitHub Pages Setup
 
-To serve this page via GitHub Pages:
+For repositories named `creative-tech-india.github.io`:
 1. Go to repository **Settings** → **Pages**.
-2. Under **Build and deployment** > **Source**, choose **Deploy from a branch**.
-3. Select branch `main` and folder `/ (root)`, then click **Save**.
-4. The site will be available at `https://allwinwilliams.github.io/creative-tech-india/`.
+2. Under **Build and deployment** > **Source**, select **GitHub Actions** (uses `.github/workflows/pages.yml`) or **Deploy from a branch** (`main` / root).
+3. The site is published automatically at **[https://creative-tech-india.github.io/](https://creative-tech-india.github.io/)**.
 
-Alternatively, the included GitHub Actions workflow in `.github/workflows/pages.yml` will automatically deploy changes when GitHub Actions is selected as the Pages source.
