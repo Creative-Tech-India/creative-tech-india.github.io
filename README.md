@@ -19,14 +19,14 @@ The directory captures initiatives across key disciplines:
 
 ---
 
-## 🤝 How to Contribute
+## 🤝 How to Contribute & Add Entries
 
 This directory is an open community initiative. If you run a studio, collective, lab, or event—or know someone who does:
 
-1. **Submit via Issue:** [Open an Issue](https://github.com/Creative-Tech-India/creative-tech-india.github.io/issues/new) with the name, category, location, and website or contact link.
-2. **Submit via Pull Request:**
-   - Add your entry to `DIRECTORY_DATA` in `index.html`.
-   - Submit a pull request.
+- **Fill a Form (Coming Soon):** An online submission form will be available shortly to easily submit entries directly.
+- **Email Directly:** Send entry details (Name, Category, City, Website/Social link, Brief description) to **[allwinwilliams.info@gmail.com](mailto:allwinwilliams.info@gmail.com)**.
+- **Submit via Issue:** [Open an Issue](https://github.com/Creative-Tech-India/creative-tech-india.github.io/issues/new) on GitHub.
+- **Submit via Pull Request:** Add your entry to `DIRECTORY_DATA` in `index.html` and open a PR.
 
 ---
 

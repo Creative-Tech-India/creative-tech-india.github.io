@@ -636,6 +636,125 @@
       margin: 0 auto 1.5rem;
     }
 
+    /* Hero Callout Banner */
+    .hero-callout {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      border-radius: var(--radius-md);
+      padding: 0.75rem 1.1rem;
+      font-size: 0.85rem;
+      color: var(--text);
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+
+    .hero-callout a {
+      color: var(--accent-cyan);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* Contribute / Submit Section */
+    .contribute-section {
+      margin: 2rem 0 4rem;
+    }
+
+    .contribute-card {
+      background: linear-gradient(135deg, var(--bg-surface) 0%, var(--bg-surface-alt) 100%);
+      border: 1px solid var(--border-accent);
+      border-radius: var(--radius-lg);
+      padding: 2.25rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contribute-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(56, 189, 248, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .contribute-tag {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent-cyan);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .contribute-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+
+    .contribute-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      max-width: 650px;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-notice {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 1rem;
+      background: rgba(251, 191, 36, 0.08);
+      border: 1px solid rgba(251, 191, 36, 0.25);
+      border-radius: var(--radius-md);
+      margin-bottom: 1.5rem;
+      max-width: 680px;
+    }
+
+    .form-notice-badge {
+      background: rgba(251, 191, 36, 0.2);
+      color: #fde047;
+      font-size: 0.72rem;
+      font-weight: 700;
+      font-family: var(--font-mono);
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-full);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .form-notice-text {
+      color: #fef08a;
+      font-size: 0.83rem;
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .contribute-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .btn-disabled {
+      opacity: 0.6;
+      cursor: not-allowed !important;
+      border-style: dashed;
+      background: rgba(255, 255, 255, 0.03) !important;
+      color: var(--text-dim) !important;
+    }
+
     /* Footer */
     footer {
       border-top: 1px solid var(--border);
@@ -700,11 +819,18 @@
         <div class="logo-title">Creative Technology <span>India</span></div>
       </div>
       <div class="header-links">
+        <a href="#contribute" class="btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+          <span>Add to Directory</span>
+        </a>
         <a href="https://github.com/Creative-Tech-India/creative-tech-india.github.io" target="_blank" rel="noopener noreferrer" class="btn btn-accent">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
           </svg>
-          <span>Contribute on GitHub</span>
+          <span>GitHub</span>
         </a>
       </div>
     </div>
@@ -721,6 +847,15 @@
       <p class="hero-desc">
         A community-maintained index of studios, experimental labs, collectives, academic institutions, festivals, and practitioners working at the intersection of art, design, science, and computing across India.
       </p>
+
+      <div class="hero-callout">
+        <span style="font-size: 1.1rem;">💡</span>
+        <div>
+          <strong>Fill a form to add more:</strong> Know an entity that should be on this list? 
+          <span style="color: var(--accent-amber); font-weight: 600;">(Submission form coming soon!)</span> 
+          In the meantime, email us directly at <a href="mailto:allwinwilliams.info@gmail.com">allwinwilliams.info@gmail.com</a>.
+        </div>
+      </div>
 
       <!-- Stats Bar -->
       <div class="stats-bar" id="statsBar">
@@ -817,6 +952,49 @@
       <p class="empty-desc">Try loosening your search terms or clearing current category and city filters.</p>
       <button class="btn btn-accent" id="resetFiltersBtn">Reset All Filters</button>
     </div>
+
+    <!-- Contribute / Submit Section -->
+    <section class="contribute-section" id="contribute">
+      <div class="contribute-card">
+        <span class="contribute-tag">// Community Submission</span>
+        <h2 class="contribute-title">Missing a studio, collective, lab, or artist?</h2>
+        <p class="contribute-desc">
+          We want to make this directory as comprehensive and representative as possible. You can <strong>fill a form to add more</strong> entities or initiatives exploring creative technology across India.
+        </p>
+        
+        <div class="form-notice">
+          <div class="form-notice-badge">Form Coming Soon</div>
+          <div class="form-notice-text">
+            Our self-service submission form is currently being built. In the meantime, you can reach out directly via email with the details or open an issue on GitHub!
+          </div>
+        </div>
+
+        <div class="contribute-actions">
+          <a href="mailto:allwinwilliams.info@gmail.com?subject=Add%20to%20Creative%20Technology%20India%20Directory" class="btn btn-accent">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>Email: allwinwilliams.info@gmail.com</span>
+          </a>
+          <button class="btn btn-disabled" disabled title="Online submission form coming soon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span>Fill Form (Coming Soon)</span>
+          </button>
+          <a href="https://github.com/Creative-Tech-India/creative-tech-india.github.io/issues/new" target="_blank" rel="noopener noreferrer" class="btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+            </svg>
+            <span>Submit via GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
@@ -825,10 +1003,14 @@
       <div>
         <p><strong>Creative Technology India Directory</strong></p>
         <p style="margin-top: 0.25rem; font-size: 0.8rem;">An open-source public resource for the Indian creative computing and digital arts ecosystem.</p>
+        <p style="margin-top: 0.45rem; font-size: 0.82rem;">
+          Contact: <a href="mailto:allwinwilliams.info@gmail.com" style="color: var(--accent-cyan); text-decoration: underline; text-underline-offset: 3px;">allwinwilliams.info@gmail.com</a>
+        </p>
       </div>
       <div class="footer-links">
+        <a href="#contribute">Add an Entry</a>
         <a href="https://github.com/Creative-Tech-India/creative-tech-india.github.io" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
-        <a href="https://github.com/Creative-Tech-India/creative-tech-india.github.io/issues/new" target="_blank" rel="noopener noreferrer">Submit an Entry</a>
+        <a href="mailto:allwinwilliams.info@gmail.com">Contact</a>
       </div>
     </div>
   </footer>
