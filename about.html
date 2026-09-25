@@ -4,38 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>What is Creative Technology? | Creative Technology India</title>
-  <meta name="description" content="An overview of creative technology, core disciplines like XR, Physical Computing, Interaction Design, and its application domains in events, branding, education, and culture." />
+  <meta name="description" content="An overview of creative technology, core disciplines like XR, Physical Computing, Interaction Design, and its application domains." />
 
-  <!-- Fonts -->
+  <link rel="icon" type="image/png" href="logo.png" />
+  
+  <!-- Fonts: Inter & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <style>
     :root {
-      --bg: #090a0f;
-      --bg-surface: #10131c;
-      --bg-surface-alt: #161a26;
-      --bg-surface-hover: #1c2233;
-      --border: rgba(255, 255, 255, 0.08);
-      --border-accent: rgba(56, 189, 248, 0.25);
+      --bg: #ececed;
+      --text: #111111;
+      --text-muted: #555559;
+      --text-dim: #77777c;
+      --border-subtle: rgba(0, 0, 0, 0.08);
+      --border-line: rgba(0, 0, 0, 0.16);
       
-      --text: #f1f5f9;
-      --text-muted: #94a3b8;
-      --text-dim: #64748b;
+      --accent: #AF2DFF;
       
-      --accent-cyan: #38bdf8;
-      --accent-purple: #c084fc;
-      --accent-emerald: #34d399;
-      --accent-amber: #fbbf24;
-      --accent-rose: #fb7185;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --font-mono: 'JetBrains Mono', 'Space Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
       
-      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      --font-mono: 'Space Mono', monospace;
-      --radius-sm: 6px;
-      --radius-md: 10px;
-      --radius-lg: 16px;
-      --radius-full: 9999px;
+      --radius-sm: 2px;
     }
 
     * {
@@ -48,12 +40,11 @@
       background-color: var(--bg);
       color: var(--text);
       font-family: var(--font-sans);
-      line-height: 1.6;
+      line-height: 1.5;
       min-height: 100vh;
       overflow-x: hidden;
-      background-image: 
-        radial-gradient(circle at 10% 15%, rgba(56, 189, 248, 0.05) 0%, transparent 45%),
-        radial-gradient(circle at 90% 30%, rgba(192, 132, 252, 0.05) 0%, transparent 45%);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
     a {
@@ -62,292 +53,266 @@
     }
 
     .container {
-      max-width: 1200px;
+      max-width: 1060px;
       margin: 0 auto;
-      padding: 0 1.5rem;
+      padding: 0 1.25rem;
     }
 
-    /* Header */
+    /* Header - Static, no background, NO bottom border */
     header {
-      border-bottom: 1px solid var(--border);
-      background: rgba(9, 10, 15, 0.85);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      position: sticky;
-      top: 0;
-      z-index: 50;
+      position: static;
+      background: transparent;
+      border-bottom: none;
+      padding: 1rem 0 0.5rem;
     }
 
     .header-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 1rem 0;
       gap: 1rem;
     }
 
     .logo-badge {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
-      cursor: pointer;
+      gap: 0.5rem;
     }
 
-    .logo-dot {
-      width: 10px;
-      height: 10px;
-      background: var(--accent-cyan);
-      border-radius: 50%;
-      box-shadow: 0 0 10px var(--accent-cyan);
+    .logo-img {
+      width: 18px;
+      height: 18px;
+      display: block;
+      object-fit: contain;
     }
 
     .logo-title {
-      font-size: 1.15rem;
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
       font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-
-    .logo-title span {
-      color: var(--accent-cyan);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--text);
     }
 
     .header-links {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
+      gap: 1.25rem;
     }
 
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.5rem 0.9rem;
-      font-size: 0.85rem;
-      font-weight: 500;
-      border-radius: var(--radius-sm);
-      transition: all 0.2s ease;
-      cursor: pointer;
-      border: 1px solid var(--border);
-      background: var(--bg-surface);
+    .header-link {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      transition: color 0.15s ease;
+    }
+
+    .header-link:hover {
       color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 3px;
     }
 
-    .btn:hover {
-      background: var(--bg-surface-hover);
-      border-color: rgba(255, 255, 255, 0.2);
-    }
-
-    .btn-active {
-      background: rgba(56, 189, 248, 0.12);
-      border-color: var(--accent-cyan);
-      color: var(--accent-cyan);
-    }
-
-    .btn-accent {
-      background: rgba(56, 189, 248, 0.1);
-      border-color: rgba(56, 189, 248, 0.3);
-      color: var(--accent-cyan);
-    }
-
-    .btn-accent:hover {
-      background: rgba(56, 189, 248, 0.2);
-      border-color: var(--accent-cyan);
+    .header-link.active {
+      color: var(--text);
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-color: var(--accent);
+      text-underline-offset: 4px;
     }
 
     /* Hero */
     .about-hero {
-      padding: 4rem 0 2.5rem;
-      max-width: 900px;
+      padding: 2.25rem 0 1.5rem;
+      max-width: 680px;
     }
 
-    .hero-pre {
+    .hero-meta {
       font-family: var(--font-mono);
-      font-size: 0.8rem;
-      color: var(--accent-cyan);
+      font-size: 0.6875rem;
+      color: var(--text-dim);
       text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 0.75rem;
-      display: inline-block;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.4rem;
     }
 
+    /* Titles - mono case and capitalised */
     .about-hero h1 {
-      font-size: clamp(2.2rem, 5vw, 3.5rem);
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      line-height: 1.15;
-      margin-bottom: 1.25rem;
-    }
-
-    .gradient-text {
-      background: linear-gradient(135deg, #ffffff 40%, #94a3b8 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .accent-text {
-      background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-purple) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      font-family: var(--font-mono);
+      font-size: clamp(1.25rem, 2.75vw, 1.65rem);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      line-height: 1.25;
+      margin-bottom: 0.5rem;
+      color: var(--text);
     }
 
     .lead-text {
-      font-size: 1.15rem;
+      font-size: 0.85rem;
       color: var(--text-muted);
-      line-height: 1.7;
-      margin-bottom: 2rem;
+      line-height: 1.5;
+      margin-bottom: 1rem;
     }
 
     .def-card {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-accent);
-      border-radius: var(--radius-lg);
-      padding: 1.75rem 2rem;
-      position: relative;
-      margin-bottom: 4rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      background: transparent;
+      border: none;
+      border-left: 2px solid var(--accent);
+      padding: 0.25rem 0 0.25rem 0.75rem;
+      margin-bottom: 2rem;
     }
 
     .def-quote {
-      font-size: 1.1rem;
-      font-weight: 500;
-      color: #fff;
-      margin-bottom: 0.75rem;
+      font-size: 0.8125rem;
       font-style: italic;
+      color: var(--text);
+      line-height: 1.45;
+      margin-bottom: 0.25rem;
     }
 
     .def-byline {
-      font-size: 0.85rem;
-      color: var(--accent-cyan);
+      font-size: 0.6875rem;
+      color: var(--text-dim);
       font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
     }
 
-    /* Section Headings */
+    /* Sections */
     .section-header {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border-subtle);
     }
 
     .section-tag {
       font-family: var(--font-mono);
-      font-size: 0.75rem;
-      color: var(--accent-purple);
+      font-size: 0.6875rem;
+      color: var(--text-dim);
       text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 0.5rem;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.2rem;
       display: block;
     }
 
     .section-title {
-      font-size: 1.85rem;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      color: #fff;
-      margin-bottom: 0.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: var(--text);
+      margin-bottom: 0.2rem;
     }
 
     .section-desc {
       color: var(--text-muted);
-      font-size: 0.95rem;
-      max-width: 700px;
+      font-size: 0.8125rem;
+      max-width: 580px;
+      line-height: 1.45;
     }
 
-    /* Grid Layouts */
+    /* Purpose - Mission & Vision */
+    .purpose-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .purpose-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .purpose-label {
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .purpose-text {
+      font-size: 0.875rem;
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    /* Grid Layouts - No box cards, clean border-bottom rows */
     .cards-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 1.5rem;
-      margin-bottom: 4.5rem;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem 1rem;
+      margin-bottom: 2.5rem;
     }
 
     .item-card {
-      background: var(--bg-surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 1.5rem;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 0 0 1rem 0;
       display: flex;
       flex-direction: column;
-      gap: 0.85rem;
-      transition: all 0.2s ease;
-      position: relative;
+      gap: 0.45rem;
     }
 
-    .item-card:hover {
-      border-color: var(--border-accent);
-      background: var(--bg-surface-alt);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-    }
-
-    .icon-box {
-      width: 44px;
-      height: 44px;
-      border-radius: var(--radius-sm);
+    .item-header {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 0.25rem;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.5rem;
     }
-
-    .icon-cyan { background: rgba(56, 189, 248, 0.12); color: var(--accent-cyan); border: 1px solid rgba(56, 189, 248, 0.25); }
-    .icon-purple { background: rgba(192, 132, 252, 0.12); color: var(--accent-purple); border: 1px solid rgba(192, 132, 252, 0.25); }
-    .icon-emerald { background: rgba(52, 211, 153, 0.12); color: var(--accent-emerald); border: 1px solid rgba(52, 211, 153, 0.25); }
-    .icon-amber { background: rgba(251, 191, 36, 0.12); color: var(--accent-amber); border: 1px solid rgba(251, 191, 36, 0.25); }
-    .icon-rose { background: rgba(251, 113, 133, 0.12); color: var(--accent-rose); border: 1px solid rgba(251, 113, 133, 0.25); }
 
     .item-title {
-      font-size: 1.15rem;
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
       font-weight: 700;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      color: var(--text);
     }
 
     .item-badge {
-      font-size: 0.7rem;
+      font-size: 0.6875rem;
       font-family: var(--font-mono);
-      padding: 0.15rem 0.5rem;
-      border-radius: var(--radius-full);
-      background: rgba(255, 255, 255, 0.06);
       color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
     }
 
     .item-desc {
       color: var(--text-muted);
-      font-size: 0.88rem;
-      line-height: 1.55;
+      font-size: 0.78rem;
+      line-height: 1.4;
     }
 
     .item-tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.35rem;
+      gap: 0.4rem;
       margin-top: auto;
-      padding-top: 0.5rem;
+      padding-top: 0.25rem;
     }
 
     .tech-tag {
-      font-size: 0.72rem;
+      font-size: 0.6875rem;
       font-family: var(--font-mono);
       color: var(--text-dim);
-      background: rgba(255, 255, 255, 0.04);
-      padding: 0.15rem 0.45rem;
-      border-radius: 4px;
-      border: 1px solid rgba(255, 255, 255, 0.05);
     }
 
     /* Call to Action Banner */
     .cta-banner {
-      background: linear-gradient(135deg, var(--bg-surface) 0%, var(--bg-surface-alt) 100%);
-      border: 1px solid var(--border-accent);
-      border-radius: var(--radius-lg);
-      padding: 2.5rem;
-      margin-bottom: 5rem;
+      background: transparent;
+      border: none;
+      border-top: 1px solid var(--border-subtle);
+      padding: 1.5rem 0 2.5rem;
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
-      align-items: flex-start;
-      position: relative;
-      overflow: hidden;
+      gap: 0.5rem;
     }
 
     @media (min-width: 768px) {
@@ -359,77 +324,84 @@
     }
 
     .cta-text h3 {
-      font-size: 1.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
       font-weight: 700;
-      color: #fff;
-      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      color: var(--text);
+      margin-bottom: 0.15rem;
     }
 
     .cta-text p {
       color: var(--text-muted);
-      font-size: 0.95rem;
-      max-width: 550px;
+      font-size: 0.8125rem;
     }
 
-    .cta-buttons {
-      display: flex;
-      gap: 0.75rem;
-      flex-wrap: wrap;
+    .action-link {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color 0.15s ease;
+    }
+
+    .action-link:hover {
+      color: var(--accent);
+      text-decoration-color: var(--accent);
     }
 
     /* Footer */
     footer {
-      border-top: 1px solid var(--border);
-      padding: 3rem 0;
-      background: var(--bg-surface);
-      font-size: 0.85rem;
-      color: var(--text-muted);
+      border-top: 1px solid var(--border-subtle);
+      padding: 1.5rem 0 2.5rem;
+      background: transparent;
+      font-size: 0.75rem;
+      color: var(--text-dim);
     }
 
     .footer-inner {
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
-      align-items: center;
-      text-align: center;
+      gap: 0.75rem;
+      align-items: flex-start;
     }
 
     @media (min-width: 768px) {
       .footer-inner {
         flex-direction: row;
         justify-content: space-between;
-        text-align: left;
+        align-items: center;
       }
     }
 
     .footer-links {
       display: flex;
-      gap: 1.5rem;
+      gap: 1.25rem;
     }
 
     .footer-links a:hover {
-      color: var(--accent-cyan);
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Navigation (Non-sticky, no bottom border, all 4 links present) -->
   <header>
     <div class="container header-inner">
       <a href="index.html" class="logo-badge">
-        <div class="logo-dot"></div>
-        <div class="logo-title">Creative Technology <span>India</span></div>
+        <img src="logo.png" alt="Creative Technology India Logo" class="logo-img" width="18" height="18" />
+        <div class="logo-title">CREATIVE TECH INDIA</div>
       </a>
       <div class="header-links">
-        <a href="index.html" class="btn">Directory</a>
-        <a href="about.html" class="btn btn-active">What is Creative Tech?</a>
-        <a href="https://github.com/Creative-Tech-India/creative-tech-india.github.io" target="_blank" rel="noopener noreferrer" class="btn btn-accent">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
-          </svg>
-          <span>GitHub</span>
-        </a>
+        <a href="index.html" class="header-link">Directory</a>
+        <a href="about.html" class="header-link active">About</a>
+        <a href="index.html#contribute" class="header-link">Contribute</a>
+        <a href="https://github.com/Creative-Tech-India/creative-tech-india.github.io" target="_blank" rel="noopener noreferrer" class="header-link">GitHub ↗</a>
       </div>
     </div>
   </header>
@@ -437,193 +409,142 @@
   <!-- Hero -->
   <main class="container">
     <section class="about-hero">
-      <div class="hero-pre">// Primer & Overview</div>
-      <h1>
-        <span class="gradient-text">What is</span> <span class="accent-text">Creative Technology?</span>
-      </h1>
+      <div class="hero-meta">PRIMER</div>
+      <h1>What is Creative Technology?</h1>
       <p class="lead-text">
-        Creative Technology is the interdisciplinary practice where art, design, computer science, and engineering meet. Rather than viewing technology purely as a functional utility, creative technologists use code, hardware, sensors, and algorithms as creative mediums to craft novel human experiences.
+        Creative Technology is the interdisciplinary convergence of art, design, and computer science. Practitioners use code, electronics, and algorithms as creative mediums to design interactive and sensory experiences.
       </p>
 
       <div class="def-card">
         <div class="def-quote">
-          "Creative technology isn't just about writing software or soldering wires—it is about designing the invisible dialogue between humans, machines, and physical environments."
+          "Designing the invisible dialogue between humans, machines, and physical environments."
         </div>
-        <div class="def-byline">// The Indian Creative Tech Landscape</div>
+        <div class="def-byline">Landscape Definition</div>
+      </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section>
+      <div class="section-header">
+        <span class="section-tag">PURPOSE</span>
+        <h2 class="section-title">Mission & Vision</h2>
+      </div>
+
+      <div class="purpose-grid">
+        <div class="purpose-item">
+          <div class="purpose-label">Mission</div>
+          <p class="purpose-text">
+            To promote creative technology in all its forms across India.
+          </p>
+        </div>
+        <div class="purpose-item">
+          <div class="purpose-label">Vision</div>
+          <p class="purpose-text">
+            To make creative experimentation a mainstream medium of cultural and technological expression across India.
+          </p>
+        </div>
       </div>
     </section>
 
     <!-- Core Disciplines -->
     <section>
       <div class="section-header">
-        <span class="section-tag">// Core Pillars</span>
-        <h2 class="section-title">Key Disciplines & Scope</h2>
-        <p class="section-desc">
-          Creative technology spans a vast spectrum of creative and technical capabilities. Below are the foundational fields driving the medium today:
-        </p>
+        <span class="section-tag">DISCIPLINES</span>
+        <h2 class="section-title">Core Disciplines</h2>
+        <p class="section-desc">Key technical and artistic domains driving the field:</p>
       </div>
 
       <div class="cards-grid">
-        <!-- 1. XR (AR/VR/MR) -->
         <div class="item-card">
-          <div class="icon-box icon-cyan">
-            <!-- VR Goggles Icon -->
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="2" y="6" width="20" height="12" rx="4"></rect>
-              <circle cx="8" cy="12" r="2"></circle>
-              <circle cx="16" cy="12" r="2"></circle>
-              <line x1="12" y1="12" x2="12" y2="12.01"></line>
-            </svg>
-          </div>
-          <div class="item-title">
-            <span>XR (AR / VR / MR)</span>
+          <div class="item-header">
+            <span class="item-title">XR (AR / VR / MR)</span>
             <span class="item-badge">Spatial</span>
           </div>
           <p class="item-desc">
-            Spatial computing, virtual reality headsets, augmented reality overlays on mobile and smart glasses, and mixed reality environments that blur the physical and virtual boundaries.
+            Spatial computing, headsets, mobile augmented reality overlays, and mixed reality environments blurring physical and virtual boundaries.
           </p>
           <div class="item-tags">
             <span class="tech-tag">WebXR</span>
             <span class="tech-tag">Unity</span>
             <span class="tech-tag">Unreal</span>
-            <span class="tech-tag">Apple Vision Pro</span>
-            <span class="tech-tag">Meta Quest</span>
+            <span class="tech-tag">Vision Pro</span>
           </div>
         </div>
 
-        <!-- 2. Physical Computing -->
         <div class="item-card">
-          <div class="icon-box icon-purple">
-            <!-- Microchip Icon -->
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="4" y="4" width="16" height="16" rx="2"></rect>
-              <rect x="9" y="9" width="6" height="6"></rect>
-              <line x1="9" y1="1" x2="9" y2="4"></line>
-              <line x1="15" y1="1" x2="15" y2="4"></line>
-              <line x1="9" y1="20" x2="9" y2="23"></line>
-              <line x1="15" y1="20" x2="15" y2="23"></line>
-              <line x1="20" y1="9" x2="23" y2="9"></line>
-              <line x1="20" y1="14" x2="23" y2="14"></line>
-              <line x1="1" y1="9" x2="4" y2="9"></line>
-              <line x1="1" y1="14" x2="4" y2="14"></line>
-            </svg>
-          </div>
-          <div class="item-title">
-            <span>Physical Computing</span>
+          <div class="item-header">
+            <span class="item-title">Physical Computing</span>
             <span class="item-badge">Hardware</span>
           </div>
           <p class="item-desc">
-            Interfacing microcontrollers with the real world using custom sensors, actuators, motors, kinetic mechanics, wearable electronics, and tactile spatial controls.
+            Microcontroller interfaces, custom sensors, kinetic actuators, wearable tech, and tactile spatial controls.
           </p>
           <div class="item-tags">
             <span class="tech-tag">Arduino</span>
             <span class="tech-tag">ESP32</span>
             <span class="tech-tag">Raspberry Pi</span>
-            <span class="tech-tag">Sensors & Motors</span>
             <span class="tech-tag">DMX</span>
           </div>
         </div>
 
-        <!-- 3. New Media Art & Creative Coding -->
         <div class="item-card">
-          <div class="icon-box icon-emerald">
-            <!-- Code / Art Icon -->
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="16 18 22 12 16 6"></polyline>
-              <polyline points="8 6 2 12 8 18"></polyline>
-              <circle cx="12" cy="12" r="3"></circle>
-            </svg>
-          </div>
-          <div class="item-title">
-            <span>New Media Art</span>
+          <div class="item-header">
+            <span class="item-title">New Media Art</span>
             <span class="item-badge">Generative</span>
           </div>
           <p class="item-desc">
-            Algorithmic visuals, real-time node-based graphics, shaders, projection mapping onto architectural facades, and interactive gallery installations.
+            Algorithmic visuals, real-time node graphics, GLSL shaders, facade projection mapping, and gallery installations.
           </p>
           <div class="item-tags">
             <span class="tech-tag">TouchDesigner</span>
-            <span class="tech-tag">Notch</span>
             <span class="tech-tag">p5.js</span>
-            <span class="tech-tag">GLSL Shaders</span>
-            <span class="tech-tag">openFrameworks</span>
+            <span class="tech-tag">GLSL</span>
+            <span class="tech-tag">Notch</span>
           </div>
         </div>
 
-        <!-- 4. Interaction Design -->
         <div class="item-card">
-          <div class="icon-box icon-amber">
-            <!-- Finger touch icon -->
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 2a4 4 0 0 0-4 4v7a2 2 0 0 1-2 2H5a2 2 0 0 0-2 2v2a7 7 0 0 0 7 7h4a7 7 0 0 0 7-7v-8a4 4 0 0 0-4-4 4 4 0 0 0-4 4"></path>
-              <line x1="8" y1="6" x2="8" y2="12"></line>
-            </svg>
-          </div>
-          <div class="item-title">
-            <span>Interaction Design (IxD)</span>
+          <div class="item-header">
+            <span class="item-title">Interaction Design</span>
             <span class="item-badge">Experience</span>
           </div>
           <p class="item-desc">
-            Designing reciprocal relationships between humans and technology through responsive physical spaces, tactile interfaces, multi-touch screens, and gesture-driven experiences.
+            Responsive environments, multi-touch screens, computer vision tracking, and gesture-driven experiential spaces.
           </p>
           <div class="item-tags">
-            <span class="tech-tag">Phygital Spaces</span>
-            <span class="tech-tag">Kinect / LiDAR</span>
+            <span class="tech-tag">Phygital</span>
+            <span class="tech-tag">LiDAR</span>
             <span class="tech-tag">Computer Vision</span>
-            <span class="tech-tag">Interactive Kiosks</span>
           </div>
         </div>
 
-        <!-- 5. HCI Research & Speculative Futures -->
         <div class="item-card">
-          <div class="icon-box icon-rose">
-            <!-- Lightbulb / Research Icon -->
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M9 18h6"></path>
-              <path d="M10 22h4"></path>
-              <path d="M12 2a7 7 0 0 0-7 7c0 2.6 1.4 4.5 2.5 5.5.5.5.5 1.5.5 2.5h8c0-1 0-2 .5-2.5 1.1-1 2.5-2.9 2.5-5.5a7 7 0 0 0-7-7z"></path>
-            </svg>
-          </div>
-          <div class="item-title">
-            <span>HCI & Future Prototyping</span>
+          <div class="item-header">
+            <span class="item-title">HCI & Prototyping</span>
             <span class="item-badge">Research</span>
           </div>
           <p class="item-desc">
-            Human-Computer Interaction (HCI) research exploring tangible user interfaces (TUI), brain-computer interfaces (BCI), bio-design, and critical & speculative design futures.
+            Tangible user interfaces, brain-computer interfaces, bio-sensing, and critical & speculative design futures.
           </p>
           <div class="item-tags">
             <span class="tech-tag">Tangible UI</span>
-            <span class="tech-tag">Speculative Design</span>
             <span class="tech-tag">Bio-sensing</span>
             <span class="tech-tag">Spatial Audio</span>
           </div>
         </div>
 
-        <!-- 6. Algorithmic Sound & Algorave -->
         <div class="item-card">
-          <div class="icon-box icon-cyan">
-            <!-- Soundwave / Music icon -->
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <line x1="4" y1="9" x2="4" y2="15"></line>
-              <line x1="8" y1="5" x2="8" y2="19"></line>
-              <line x1="12" y1="2" x2="12" y2="22"></line>
-              <line x1="16" y1="7" x2="16" y2="17"></line>
-              <line x1="20" y1="10" x2="20" y2="14"></line>
-            </svg>
-          </div>
-          <div class="item-title">
-            <span>Algorave & Live Coding</span>
-            <span class="item-badge">Audio / AV</span>
+          <div class="item-header">
+            <span class="item-title">Algorave & Live Coding</span>
+            <span class="item-badge">Audio</span>
           </div>
           <p class="item-desc">
-            Writing live code on stage to generate electronic dance music and synchronized procedural visuals. Embracing live improvisation, open-source tools, and club subculture.
+            Writing live code on stage to generate electronic music and synchronized procedural visuals in real time.
           </p>
           <div class="item-tags">
             <span class="tech-tag">TidalCycles</span>
             <span class="tech-tag">Sonic Pi</span>
-            <span class="tech-tag">SuperCollider</span>
             <span class="tech-tag">Hydra</span>
-            <span class="tech-tag">Pure Data</span>
           </div>
         </div>
       </div>
@@ -632,152 +553,87 @@
     <!-- Industry Domains & Use Cases -->
     <section>
       <div class="section-header">
-        <span class="section-tag">// Real-World Applications</span>
-        <h2 class="section-title">Where is Creative Technology Used?</h2>
-        <p class="section-desc">
-          Creative technology has become essential across creative industries, public institutions, and commercial enterprises:
-        </p>
+        <span class="section-tag">APPLICATIONS</span>
+        <h2 class="section-title">Application Domains</h2>
+        <p class="section-desc">Where creative technology is deployed in industry and culture:</p>
       </div>
 
       <div class="cards-grid">
-        <!-- 1. Events & Live Entertainment -->
         <div class="item-card">
-          <div class="icon-box icon-amber">
-            <!-- Sparkles / Stage icon -->
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-            </svg>
-          </div>
-          <div class="item-title">
-            <span>Events & Live Festivals</span>
+          <div class="item-header">
+            <span class="item-title">Events & Live Festivals</span>
           </div>
           <p class="item-desc">
-            Immersive stages, audio-reactive concert visuals, dynamic light choreography, projection mapping on monumental structures, and festival interactive art zones.
+            Audio-reactive concert visuals, dynamic light choreography, architectural projection mapping, and festival art zones.
           </p>
           <div class="item-tags">
             <span class="tech-tag">Concerts</span>
             <span class="tech-tag">Art Festivals</span>
-            <span class="tech-tag">Opening Ceremonies</span>
           </div>
         </div>
 
-        <!-- 2. Marketing, Branding & Experiential Activations -->
         <div class="item-card">
-          <div class="icon-box icon-purple">
-            <!-- Megaphone / Campaign icon -->
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M3 11l18-5v12L3 13v-2z"></path>
-              <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path>
-            </svg>
-          </div>
-          <div class="item-title">
-            <span>Branding & Retail Activations</span>
+          <div class="item-header">
+            <span class="item-title">Retail & Brand Activations</span>
           </div>
           <p class="item-desc">
-            Gamified pop-up stores, branded AR photo-booths, anamorphic 3D billboard illusions, generative social campaigns, and experiential showrooms.
+            Pop-up brand experiences, 3D anamorphic displays, interactive kiosks, and experiential retail showrooms.
           </p>
           <div class="item-tags">
-            <span class="tech-tag">Brand Pop-ups</span>
-            <span class="tech-tag">OOH 3D Displays</span>
-            <span class="tech-tag">Phygital Retail</span>
+            <span class="tech-tag">Pop-ups</span>
+            <span class="tech-tag">3D Displays</span>
           </div>
         </div>
 
-        <!-- 3. Museums, Culture & Heritage -->
         <div class="item-card">
-          <div class="icon-box icon-cyan">
-            <!-- Columns / Museum icon -->
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <line x1="3" y1="21" x2="21" y2="21"></line>
-              <line x1="3" y1="10" x2="21" y2="10"></line>
-              <polyline points="3 10 12 3 21 10"></polyline>
-              <line x1="6" y1="10" x2="6" y2="21"></line>
-              <line x1="10" y1="10" x2="10" y2="21"></line>
-              <line x1="14" y1="10" x2="14" y2="21"></line>
-              <line x1="18" y1="10" x2="18" y2="21"></line>
-            </svg>
-          </div>
-          <div class="item-title">
-            <span>Museums & Heritage Preservation</span>
+          <div class="item-header">
+            <span class="item-title">Museums & Cultural Heritage</span>
           </div>
           <p class="item-desc">
-            Digital curation, interactive archival exhibits, photogrammetry of historical antiquities, 360° virtual tours, and kinetic storytelling installations in cultural centers.
+            Interactive archival exhibits, 3D photogrammetry of artifacts, virtual walkthroughs, and kinetic installations.
           </p>
           <div class="item-tags">
             <span class="tech-tag">Digital Museums</span>
-            <span class="tech-tag">Cultural Heritage</span>
-            <span class="tech-tag">Interactive Archives</span>
+            <span class="tech-tag">Archives</span>
           </div>
         </div>
 
-        <!-- 4. Education & Academia -->
         <div class="item-card">
-          <div class="icon-box icon-emerald">
-            <!-- Graduation Cap icon -->
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-            </svg>
-          </div>
-          <div class="item-title">
-            <span>Education & STEAM Learning</span>
+          <div class="item-header">
+            <span class="item-title">Education & Academia</span>
           </div>
           <p class="item-desc">
-            Creative coding curricula, interactive learning exhibits in science museums, university design and media tech labs, and STEM-to-STEAM interdisciplinary fellowships.
+            Creative coding curricula, university design and computing labs, and interdisciplinary STEAM programs.
           </p>
           <div class="item-tags">
             <span class="tech-tag">Design Schools</span>
             <span class="tech-tag">Makerspaces</span>
-            <span class="tech-tag">STEAM Fellowships</span>
           </div>
         </div>
 
-        <!-- 5. Architecture & Public Spaces -->
         <div class="item-card">
-          <div class="icon-box icon-rose">
-            <!-- Building / Architecture icon -->
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="4" y="2" width="16" height="20" rx="2"></rect>
-              <line x1="9" y1="6" x2="9" y2="6.01"></line>
-              <line x1="15" y1="6" x2="15" y2="6.01"></line>
-              <line x1="9" y1="10" x2="9" y2="10.01"></line>
-              <line x1="15" y1="10" x2="15" y2="10.01"></line>
-              <line x1="9" y1="14" x2="9" y2="14.01"></line>
-              <line x1="15" y1="14" x2="15" y2="14.01"></line>
-              <path d="M10 22v-4h4v4"></path>
-            </svg>
-          </div>
-          <div class="item-title">
-            <span>Architecture & Public Spaces</span>
+          <div class="item-header">
+            <span class="item-title">Architecture & Public Spaces</span>
           </div>
           <p class="item-desc">
-            Media facades, responsive building skins, airport experiential terminals, public park kinetic installations, and smart city civic interaction experiments.
+            Media facades, responsive building skins, kinetic sculptures, and interactive public civic installations.
           </p>
           <div class="item-tags">
             <span class="tech-tag">Media Architecture</span>
-            <span class="tech-tag">Airports & Plazas</span>
-            <span class="tech-tag">Kinetic Facades</span>
+            <span class="tech-tag">Civic Spaces</span>
           </div>
         </div>
 
-        <!-- 6. Healthcare, Wellbeing & Accessibility -->
         <div class="item-card">
-          <div class="icon-box icon-purple">
-            <!-- Heart / Pulse icon -->
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-            </svg>
-          </div>
-          <div class="item-title">
-            <span>Therapy & Assistive Technology</span>
+          <div class="item-header">
+            <span class="item-title">Therapy & Accessibility</span>
           </div>
           <p class="item-desc">
-            Virtual reality for physical rehabilitation and psychological therapy, multi-sensory snoezelen rooms for neurodivergent individuals, and tactile assistive tools.
+            Immersive VR for rehabilitation, multi-sensory snoezelen spaces, and tactile assistive tools.
           </p>
           <div class="item-tags">
             <span class="tech-tag">Therapeutic VR</span>
             <span class="tech-tag">Sensory Rooms</span>
-            <span class="tech-tag">Assistive Tools</span>
           </div>
         </div>
       </div>
@@ -786,19 +642,12 @@
     <!-- Bottom CTA banner -->
     <section class="cta-banner">
       <div class="cta-text">
-        <h3>Explore the Indian Creative Tech Directory</h3>
-        <p>Discover over 36+ studios, academic labs, communities, and practitioners pioneering these fields across India.</p>
+        <h3>Creative Technology Directory</h3>
+        <p>Explore index of studios, labs, and practitioners across India.</p>
       </div>
-      <div class="cta-buttons">
-        <a href="index.html" class="btn btn-accent">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="19" y1="12" x2="5" y2="12"></line>
-            <polyline points="12 19 5 12 12 5"></polyline>
-          </svg>
-          <span>View Directory</span>
-        </a>
-        <a href="index.html#contribute" class="btn">
-          <span>Add an Entry</span>
+      <div>
+        <a href="index.html" class="action-link">
+          View Directory ↗
         </a>
       </div>
     </section>
@@ -808,17 +657,14 @@
   <footer>
     <div class="container footer-inner">
       <div>
-        <p><strong>Creative Technology India Directory</strong></p>
-        <p style="margin-top: 0.25rem; font-size: 0.8rem;">An open-source public resource for the Indian creative computing and digital arts ecosystem.</p>
-        <p style="margin-top: 0.45rem; font-size: 0.82rem;">
-          Contact: <a href="mailto:allwinwilliams.info@gmail.com" style="color: var(--accent-cyan); text-decoration: underline; text-underline-offset: 3px;">allwinwilliams.info@gmail.com</a>
-        </p>
+        <p><strong>Creative Technology India</strong> — Open index of Indian creative computing.</p>
       </div>
       <div class="footer-links">
         <a href="index.html">Directory</a>
-        <a href="about.html">What is Creative Tech?</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contribute">Contribute</a>
         <a href="https://github.com/Creative-Tech-India/creative-tech-india.github.io" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="mailto:allwinwilliams.info@gmail.com">Contact</a>
+        <a href="mailto:hello@creativetechindia.net">Contact</a>
       </div>
     </div>
   </footer>
