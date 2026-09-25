@@ -345,6 +345,12 @@ export default function DirectoryPage() {
               hello@creativetechindia.net ↗
             </a>
             <a
+              href="/contribute"
+              className="action-link"
+            >
+              Ways to Contribute ↗
+            </a>
+            <a
               href="https://github.com/Creative-Tech-India/creative-tech-india.github.io"
               target="_blank"
               rel="noopener noreferrer"

@@ -755,6 +755,45 @@ footer {
   font-size: 0.8125rem;
 }
 
+/* Contribute Page Styles */
+.contribute-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.contribute-item {
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.contribute-num {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+}
+
+.contribute-item-title {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+
+.contribute-item-desc {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  line-height: 1.45;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .hero {

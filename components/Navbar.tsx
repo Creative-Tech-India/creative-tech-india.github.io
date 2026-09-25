@@ -34,7 +34,10 @@ export default function Navbar() {
           >
             About
           </Link>
-          <Link href="/#contribute" className="header-link">
+          <Link
+            href="/contribute"
+            className={`header-link ${pathname === "/contribute" ? "active" : ""}`}
+          >
             Contribute
           </Link>
           <a
