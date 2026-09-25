@@ -25,14 +25,34 @@ This directory is an open community initiative. If you run a studio, collective,
 
 - **Email Directly:** Send entry details, updates, or corrections to **[hello@creativetechindia.net](mailto:hello@creativetechindia.net)**.
 - **Submit via Issue:** [Open an Issue](https://github.com/Creative-Tech-India/creative-tech-india.github.io/issues/new) on GitHub.
-- **Submit via Pull Request:** Add or update an entry in `DIRECTORY_DATA` in `index.html` and open a PR.
+- **Submit via Pull Request:** Add or update an entry in [`data/directory.json`](data/directory.json) and open a PR.
 
 ---
 
-## 🚀 GitHub Pages Setup
+## 💻 Local Development
 
-For repositories named `creative-tech-india.github.io`:
-1. Go to repository **Settings** → **Pages**.
-2. Under **Build and deployment** > **Source**, select **GitHub Actions** (uses `.github/workflows/pages.yml`) or **Deploy from a branch** (`main` / root).
-3. The site is published automatically at **[https://creative-tech-india.github.io/](https://creative-tech-india.github.io/)**.
+Built with [Next.js](https://nextjs.org/) (App Router), TypeScript, and React.
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## 🚀 Deployment (Vercel)
+
+This project is optimized for deployment on [Vercel](https://vercel.com):
+
+1. Import this GitHub repository into your Vercel account.
+2. Vercel automatically detects Next.js with zero configuration needed.
+3. Click **Deploy**. Each commit and pull request will receive automatic preview and production deployments.
 

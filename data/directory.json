@@ -1,0 +1,650 @@
+[
+  {
+    "name": "4Brains",
+    "category": "Organisation",
+    "city": "Mumbai, Banglore, Delhi",
+    "link": "https://www.4brains.in/"
+  },
+  {
+    "name": "Digital Jalebi",
+    "category": "Organisation",
+    "city": "Delhi",
+    "link": "https://www.digitaljalebi.com/"
+  },
+  {
+    "name": "CraftTech 360",
+    "category": "Organisation",
+    "city": "Bangalore",
+    "link": "https://www.craftech360.com/"
+  },
+  {
+    "name": "Phygital Studios",
+    "category": "Organisation",
+    "city": "Bangalore",
+    "link": "https://thephygitalstudio.com/"
+  },
+  {
+    "name": "DVSI",
+    "category": "Organisation",
+    "city": "Bangalore",
+    "link": "https://www.dvsi.com/"
+  },
+  {
+    "name": "AltCore",
+    "category": "Organisation",
+    "city": "Pune",
+    "link": "https://www.linkedin.com/company/altcoreforealestate/"
+  },
+  {
+    "name": "Galleri5",
+    "category": "Organisation",
+    "city": "Bangalore",
+    "link": "https://www.galleri5.com/"
+  },
+  {
+    "name": "Ogilvy",
+    "category": "Organisation",
+    "city": "Mumbai",
+    "link": "https://www.ogilvy.com/"
+  },
+  {
+    "name": "Kulfi Collective",
+    "category": "Organisation",
+    "city": "Mumbai",
+    "link": "https://www.kulficollective.com/"
+  },
+  {
+    "name": "HIVE IIT Kanpur",
+    "category": "Organisation",
+    "city": "Kanpur",
+    "link": "https://home.iitk.ac.in/~gowdhampg/"
+  },
+  {
+    "name": "ISRO (Indian Sonic Research Organisation)",
+    "category": "Organisation",
+    "city": "Bangalore",
+    "link": "https://www.theisro.org/"
+  },
+  {
+    "name": "MAP",
+    "category": "Organisation",
+    "city": "Bangalore",
+    "link": "https://map-india.org/"
+  },
+  {
+    "name": "Science Gallery",
+    "category": "Organisation",
+    "city": "Bangalore",
+    "link": "https://bengaluru.sciencegallery.com/"
+  },
+  {
+    "name": "National Institute of Design",
+    "category": "Organisation",
+    "city": "Ahmedabad, Bangalore, Gandinagar",
+    "link": "https://www.nid.edu/"
+  },
+  {
+    "name": "Sristi Manipal",
+    "category": "Organisation",
+    "city": "Bangalore",
+    "link": "https://srishtimanipalinstitute.in/"
+  },
+  {
+    "name": "Anant University",
+    "category": "Organisation",
+    "city": "Ahmedabad",
+    "link": "https://www.anu.edu.in/"
+  },
+  {
+    "name": "JK Lakshmipat University",
+    "category": "Organisation",
+    "city": "Jaipur",
+    "link": "https://jklu.edu.in/"
+  },
+  {
+    "name": "Flame University",
+    "category": "Organisation",
+    "city": "Pune",
+    "link": "https://www.flame.edu.in/"
+  },
+  {
+    "name": "Sensistan",
+    "category": "Organisation",
+    "city": "Goa, Bangalore",
+    "link": "https://www.sensistan.space/"
+  },
+  {
+    "name": "Himachal Academy of Music Technology",
+    "category": "Organisation",
+    "city": "McLeod Ganj",
+    "link": "https://www.instagram.com/hamt.education"
+  },
+  {
+    "name": "BeFantastic",
+    "category": "Program",
+    "city": "Bangalore / Pan-India",
+    "link": "https://befantastic.in/"
+  },
+  {
+    "name": "Sixth Sense",
+    "category": "Event",
+    "city": "Bangalore",
+    "link": "https://www.thesixthsensefestival.com/"
+  },
+  {
+    "name": "HMI Horizon at IIT Kanpur",
+    "category": "Event",
+    "city": "Kanpur",
+    "link": "https://home.iitk.ac.in/~gowdhampg/"
+  },
+  {
+    "name": "IIT Bombay (DEF lab)",
+    "category": "Organisation",
+    "city": "Mumbai",
+    "link": "https://designforfuturelab.com/"
+  },
+  {
+    "name": "Sensistan",
+    "category": "Organisation",
+    "city": "Goa, Bangalore",
+    "link": "https://www.sensistan.space/"
+  },
+  {
+    "name": "SynthFarm",
+    "category": "Organisation",
+    "city": "Kolkata",
+    "link": "https://synthfarm.in/"
+  },
+  {
+    "name": "LiveCode BLR",
+    "category": "Organisation",
+    "city": "Bangalore",
+    "link": "https://livecode-blr.vercel.app/"
+  },
+  {
+    "name": "CCSante",
+    "category": "Organisation",
+    "city": "Pan-India",
+    "link": "https://ccsante.in/"
+  },
+  {
+    "name": "Kyoorius",
+    "category": "Award",
+    "city": "Mumbai, Pan-India",
+    "link": "https://awards.kyoorius.com/"
+  },
+  {
+    "name": "im.immerse",
+    "category": "Artist",
+    "city": "Goa",
+    "link": "https://www.instagram.com/im.immerse/"
+  },
+  {
+    "name": "eyeMyth",
+    "category": "Program",
+    "city": "Mumbai",
+    "link": "https://www.instagram.com/eyemythfestival/"
+  },
+  {
+    "name": "University of Bristol Mumbai",
+    "category": "Organisation",
+    "city": "Mumbai",
+    "link": "https://www.bristol.ac.uk/"
+  },
+  {
+    "name": "Quick sand studio",
+    "category": "Organisation",
+    "city": "Goa",
+    "link": "https://quicksand.co.in/"
+  },
+  {
+    "name": "Param",
+    "category": "Organisation",
+    "city": "Bangalore",
+    "link": "https://paramfoundation.org/"
+  },
+  {
+    "name": "Ayahi_create",
+    "category": "Studio",
+    "city": "Pondicherry",
+    "link": "https://www.ayahi.in/"
+  },
+  {
+    "name": "Ajaibghar",
+    "category": "Studio",
+    "city": "Jaipur",
+    "link": "https://ajaibghar.com/"
+  },
+  {
+    "name": "TWorks",
+    "category": "Organisation",
+    "city": "Hyderabad",
+    "link": "https://tworks.telangana.gov.in/"
+  },
+  {
+    "name": "FrameLabs",
+    "category": "Studio",
+    "city": "Mumbai",
+    "link": "https://framelabs.in/"
+  },
+  {
+    "name": "Algorave India",
+    "category": "Community",
+    "city": "Pan-India / Bangalore",
+    "link": "https://algorave.in/"
+  },
+  {
+    "name": "Attah",
+    "category": "Studio",
+    "city": "Pan-India",
+    "link": "https://www.atthah.com/"
+  },
+  {
+    "name": "Floating Canvas Co",
+    "category": "Studio",
+    "city": "Pan-India",
+    "link": "https://www.floatingcanvas.co/"
+  },
+  {
+    "name": "pifi",
+    "category": "Community",
+    "city": "Mumbai, Goa",
+    "link": "https://pifi.co.in/"
+  },
+  {
+    "name": "Sensistan",
+    "category": "Community",
+    "city": "Goa",
+    "link": "https://sensistan.space/"
+  },
+  {
+    "name": "knowsense",
+    "category": "Organisation",
+    "city": "Ahmedabad, Pan-India",
+    "link": "https://www.knownsensestudios.com/"
+  },
+  {
+    "name": "MovingPixels",
+    "category": "Organisation",
+    "city": "Pan-India",
+    "link": "https://movingpixels.in/"
+  },
+  {
+    "name": "1377 Studios",
+    "category": "Organisation",
+    "city": "Pan-India",
+    "link": "https://www.1377.co.in/"
+  },
+  {
+    "name": "nandita Kumar Studios",
+    "category": "Artist",
+    "city": "Pan-India",
+    "link": "https://nanditakumar.com/"
+  },
+  {
+    "name": "Ocupus Studio",
+    "category": "Studio",
+    "city": "Pan-India",
+    "link": "https://ocupus.in/"
+  },
+  {
+    "name": "Tagbin",
+    "category": "Studio",
+    "city": "Delhi",
+    "link": "https://tagbin.in/"
+  },
+  {
+    "name": "Empax Studio",
+    "category": "Studio",
+    "city": "Mumbai",
+    "link": "https://www.empaxstudio.com/"
+  },
+  {
+    "name": "Trzy Innovationz",
+    "category": "Studio",
+    "city": "Mumbai",
+    "link": "https://www.trzy.in/"
+  },
+  {
+    "name": "Going Highway Entertainers",
+    "category": "Studio",
+    "city": "Noida, Delhi",
+    "link": "https://goinghighway.com/"
+  },
+  {
+    "name": "OneUp Studios Experiential",
+    "category": "Studio",
+    "city": "Pan-India",
+    "link": "https://www.oneupstudios.in/"
+  },
+  {
+    "name": "Pixel & Ratio",
+    "category": "Studio",
+    "city": "Mumbai, Pune",
+    "link": "https://www.pixelandratio.com/"
+  },
+  {
+    "name": "ZingVerse",
+    "category": "Studio",
+    "city": "Mumbai",
+    "link": "https://zing-verse.com/"
+  },
+  {
+    "name": "BYX (Beyond Experience Studio)",
+    "category": "Studio",
+    "city": "Pan-India",
+    "link": "https://byxstudio.com/"
+  },
+  {
+    "name": "ACKM Studio",
+    "category": "Studio",
+    "city": "Pan-India",
+    "link": "https://ackmstudio.com/"
+  },
+  {
+    "name": "Fusion VR",
+    "category": "Studio",
+    "city": "Chennai / Bangalore",
+    "link": "https://www.fusionvr.in/"
+  },
+  {
+    "name": "Dreampoint Studios",
+    "category": "Studio",
+    "city": "Pan-India",
+    "link": "https://www.dreampointstudio.com/"
+  },
+  {
+    "name": "Immersive Arts Studio",
+    "category": "Studio",
+    "city": "Pan-India",
+    "link": "https://www.linkedin.com/company/immersive-arts-studio/about/"
+  },
+  {
+    "name": "Projection Mapping India",
+    "category": "Studio",
+    "city": "Pan-India",
+    "link": "https://projectionmappingindia.in/"
+  },
+  {
+    "name": "Hash Media",
+    "category": "Studio",
+    "city": "Pan-India",
+    "link": "https://hashmedia.in/"
+  },
+  {
+    "name": "Zeal Interactive Services",
+    "category": "Studio",
+    "city": "Pan-India",
+    "link": "https://www.zealinteractive.in/"
+  },
+  {
+    "name": "Binary Labs",
+    "category": "Studio",
+    "city": "Pan-India",
+    "link": "https://www.randomstuffwemake.in/"
+  },
+  {
+    "name": "The White Tusker",
+    "category": "Studio",
+    "city": "Pan-India",
+    "link": "https://thewhitetusker.com/"
+  },
+  {
+    "name": "Wasabi House",
+    "category": "Studio",
+    "city": "Pan-India",
+    "link": "https://wasabihouse.in/"
+  },
+  {
+    "name": "Harkat Studios",
+    "category": "Studio",
+    "city": "Mumbai",
+    "link": "https://harkat.in/"
+  },
+  {
+    "name": "SARAI (CSDS)",
+    "category": "Organisation",
+    "city": "Delhi",
+    "link": "https://sarai.net/"
+  },
+  {
+    "name": "Media Lab IIT Guwahati",
+    "category": "Organisation",
+    "city": "Guwahati",
+    "link": "https://www.iitg.ac.in/medialab/"
+  },
+  {
+    "name": "Neverwhere India",
+    "category": "Community",
+    "city": "Bangalore, Delhi, Ahmedabad",
+    "link": "https://www.neverwhereindia.com/"
+  },
+  {
+    "name": "Node Shed",
+    "category": "Community",
+    "city": "Pan-India",
+    "link": "https://www.instagram.com/nodeshed.io/"
+  },
+  {
+    "name": "Artillume Foundation",
+    "category": "Organisation",
+    "city": "Delhi",
+    "link": "https://www.linkedin.com/company/artillume/"
+  },
+  {
+    "name": "Khoj International",
+    "category": "Organisation",
+    "city": "Delhi",
+    "link": "https://khojstudios.org/"
+  },
+  {
+    "name": "Kalakriti Art Gallery",
+    "category": "Organisation",
+    "city": "Hyderabad",
+    "link": "https://kalakritiartgallery.com/"
+  },
+  {
+    "name": "Museum of Goa (MOG)",
+    "category": "Organisation",
+    "city": "Goa",
+    "link": "https://museumofgoa.com/"
+  },
+  {
+    "name": "Goa Open Arts",
+    "category": "Organisation",
+    "city": "Goa",
+    "link": "https://goaopenarts.com/"
+  },
+  {
+    "name": "SPACE Studio",
+    "category": "Organisation",
+    "city": "Vadodara",
+    "link": "https://www.spacestudiobaroda.org/"
+  },
+  {
+    "name": "Sunaparanta Goa Centre for Arts",
+    "category": "Organisation",
+    "city": "Goa",
+    "link": "https://sgcfa.org/"
+  },
+  {
+    "name": "1 ShanthiRoad Studio/Gallery",
+    "category": "Organisation",
+    "city": "Bangalore",
+    "link": "http://1shanthiroad.com/"
+  },
+  {
+    "name": "Digital Art India",
+    "category": "Organisation",
+    "city": "Pan-India",
+    "link": "https://www.digitalartindia.com/"
+  },
+  {
+    "name": "Paper Crane Lab",
+    "category": "Organisation",
+    "city": "Bangalore",
+    "link": "https://www.papercranelab.com/"
+  },
+  {
+    "name": "Da Vinci: Genius India",
+    "category": "Event",
+    "city": "Pan-India",
+    "link": "https://www.instagram.com/geniusdavinci/"
+  },
+  {
+    "name": "The Workshop",
+    "category": "Organisation",
+    "city": "Bangalore",
+    "link": "https://the-workshop.in/"
+  },
+  {
+    "name": "Serendipity Arts Festival",
+    "category": "Event",
+    "city": "Goa",
+    "link": "https://serendipityartsfestival.com/"
+  },
+  {
+    "name": "Mumbai Light Festival",
+    "category": "Event",
+    "city": "Mumbai",
+    "link": "https://www.floatingcanvas.co/mumbai-light-festival"
+  },
+  {
+    "name": "Synth Hang",
+    "category": "Community",
+    "city": "Delhi",
+    "link": "https://www.instagram.com/synth.hang/"
+  },
+  {
+    "name": "TOPLAP Chapter Nodes",
+    "category": "Community",
+    "city": "Pan-India",
+    "link": "https://toplap.org/"
+  },
+  {
+    "name": "Rhizome Collaborations",
+    "category": "Organisation",
+    "city": "Global",
+    "link": "https://rhizome.org/"
+  },
+  {
+    "name": "Trzy X",
+    "category": "Studio",
+    "city": "Delhi, Gurgaon, Mumbai",
+    "link": "https://trzyx.in/"
+  },
+  {
+    "name": "Neverwhere India",
+    "category": "Event",
+    "city": "Bangalore, Delhi, Ahmedabad",
+    "link": "https://www.neverwhereindia.com/"
+  },
+  {
+    "name": "MakersAsylum",
+    "category": "Organisation",
+    "city": "Goa",
+    "link": "https://www.makersasylum.com/"
+  },
+  {
+    "name": "Jaaga",
+    "category": "Organisation",
+    "city": "Bangalore",
+    "link": "https://www.jaaga.org/"
+  },
+  {
+    "name": "Tarab Instruments",
+    "category": "Studio",
+    "city": "Bangalore",
+    "link": "https://www.instagram.com/tarab_instruments/"
+  },
+  {
+    "name": "Animal Factory",
+    "category": "Studio",
+    "city": "Mumbai",
+    "link": "https://animalfactoryamps.com/"
+  },
+  {
+    "name": "George Panicker",
+    "category": "Artist",
+    "city": "Bangalore",
+    "link": "https://georgepanicker.neocities.org/"
+  },
+  {
+    "name": "Computational Mama",
+    "category": "Artist",
+    "city": "Pan-India",
+    "link": "https://computationalmama.xyz/"
+  },
+  {
+    "name": "Abhishek Kapahi",
+    "category": "Artist",
+    "city": "Pan-India",
+    "link": "https://abhishekkapahi.framer.website/"
+  },
+  {
+    "name": "Harshal Pilania",
+    "category": "Artist",
+    "city": "Pan-India",
+    "link": "https://www.harshalpilania.com/"
+  },
+  {
+    "name": "Khoparzi",
+    "category": "Artist",
+    "city": "Pan-India",
+    "link": "https://khoparzi.com/"
+  },
+  {
+    "name": "Harshit Agarwal",
+    "category": "Artist",
+    "city": "Pan-India",
+    "link": "https://harshitagrawal.com/"
+  },
+  {
+    "name": "Varun Desai",
+    "category": "Artist",
+    "city": "Pan-India",
+    "link": "https://www.instagram.com/varundo/"
+  },
+  {
+    "name": "Vaibhav - psycopanda",
+    "category": "Artist",
+    "city": "Pan-India",
+    "link": "https://www.instagram.com/jack_ofsometrades/"
+  },
+  {
+    "name": "Allwin Williams",
+    "category": "Artist",
+    "city": "Pan-India",
+    "link": "https://allwinwilliams.com/"
+  },
+  {
+    "name": "Joe Sujin",
+    "category": "Artist",
+    "city": "Pan-India",
+    "link": "https://joesujin.com/"
+  },
+  {
+    "name": "Anushka Trivedi",
+    "category": "Artist",
+    "city": "Pan-India",
+    "link": "https://www.instagram.com/ophelia.game/"
+  },
+  {
+    "name": "Vinay Khare",
+    "category": "Artist",
+    "city": "Pan-India",
+    "link": "https://vinaykhare.in/"
+  },
+  {
+    "name": "Aaron Myles",
+    "category": "Artist",
+    "city": "Pan-India",
+    "link": "https://www.instagram.com/aaronmylespereira/"
+  },
+  {
+    "name": "AnshKumar",
+    "category": "Artist",
+    "city": "Pan-India",
+    "link": "https://www.anshkumar.art/"
+  }
+]
