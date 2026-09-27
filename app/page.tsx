@@ -153,18 +153,6 @@ export default function DirectoryPage() {
           artists working with creative code, physical computing, and new media
           across India.
         </h1>
-
-        <div className="stats-bar">
-          <div className="stat-item">
-            <span className="stat-val">{DIRECTORY_DATA.length}</span>
-            <span className="stat-lbl">Entries</span>
-          </div>
-          <span className="stat-divider">/</span>
-          <div className="stat-item">
-            <span className="stat-val">{cities.length}</span>
-            <span className="stat-lbl">Cities</span>
-          </div>
-        </div>
       </section>
 
       {/* Controls Toolbar: Filters left, Search + City right */}

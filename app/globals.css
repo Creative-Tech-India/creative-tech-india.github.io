@@ -110,16 +110,7 @@ header {
 
 /* Hero Section (Directory) */
 .hero {
-  padding: 2.25rem 0 1.25rem;
-}
-
-.hero-tags {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 400;
-  letter-spacing: 0.02em;
-  color: var(--text-dim);
-  margin-bottom: 0.4rem;
+  padding: 2.25rem 0 1.5rem;
 }
 
 .hero-desc {
@@ -128,7 +119,7 @@ header {
   font-weight: 500;
   max-width: 600px;
   line-height: 1.5;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 /* Stats Bar */
