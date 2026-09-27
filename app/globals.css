@@ -43,6 +43,7 @@ a {
 
 main {
   flex: 1;
+  padding-bottom: 3.5rem;
 }
 
 /* Header */
@@ -507,41 +508,6 @@ tbody tr:hover {
 .action-link:hover {
   color: var(--accent);
   text-decoration-color: var(--accent);
-}
-
-/* Footer */
-footer {
-  border-top: 1px solid var(--border-subtle);
-  padding: 1.5rem 0 2.5rem;
-  background: transparent;
-  font-size: 0.75rem;
-  color: var(--text-dim);
-}
-
-.footer-inner {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  align-items: flex-start;
-}
-
-@media (min-width: 768px) {
-  .footer-inner {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-.footer-links {
-  display: flex;
-  gap: 1.25rem;
-}
-
-.footer-links a:hover {
-  color: var(--accent);
-  text-decoration: underline;
-  text-underline-offset: 3px;
 }
 
 /* About Page Specific Styles */

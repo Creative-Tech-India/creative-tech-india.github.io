@@ -148,7 +148,6 @@ export default function DirectoryPage() {
     <main className="container">
       {/* Hero */}
       <section className="hero">
-        <div className="hero-tags">#tech #art #creative #music #media</div>
         <h1 className="hero-desc">
           An open directory of studios, experimental labs, collectives, and
           artists working with creative code, physical computing, and new media
