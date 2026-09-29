@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Link from "next/link";
 import directoryRaw from "@/data/directory.json";
 import { DirectoryItem, Category } from "@/types/directory";
 
@@ -82,7 +83,9 @@ export default function DirectoryPage() {
         const matchName = item.name.toLowerCase().includes(q);
         const matchCity = item.city.toLowerCase().includes(q);
         const matchCat = item.category.toLowerCase().includes(q);
-        if (!matchName && !matchCity && !matchCat) {
+        const matchDesc = item.description ? item.description.toLowerCase().includes(q) : false;
+        const matchTags = item.tags && item.tags.some((t) => t.toLowerCase().includes(q));
+        if (!matchName && !matchCity && !matchCat && !matchDesc && !matchTags) {
           return false;
         }
       }
@@ -298,6 +301,27 @@ export default function DirectoryPage() {
                   <td>
                     <div className="name-cell">
                       <span>{item.name}</span>
+                      {item.description && (
+                        <div className="table-item-desc">{item.description}</div>
+                      )}
+                      {item.tags && item.tags.length > 0 && (
+                        <div className="table-tags-tray">
+                          {item.tags.map((tag) => (
+                            <button
+                              key={tag}
+                              type="button"
+                              className="table-tag-btn"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                setSearchQuery(tag);
+                              }}
+                              title={`Filter by tag: ${tag}`}
+                            >
+                              #{tag}
+                            </button>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   </td>
                   <td>
@@ -321,10 +345,16 @@ export default function DirectoryPage() {
             This directory is an open, living resource. If you operate an
             initiative, studio, or event—or if you notice any details that need
             updating (apologies if any details are currently incomplete or
-            inaccurate, we continuously aim to improve)—please write to us or
-            open a pull request.
+            inaccurate, we continuously aim to improve)—please write to us,
+            submit via our suggestion form, or open a pull request.
           </p>
           <div className="contribute-actions">
+            <Link
+              href="/suggest"
+              className="action-link"
+            >
+              Suggest an Entry ↗
+            </Link>
             <a
               href="mailto:hello@creativetechindia.net"
               className="action-link"

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Contribute | Creative Technology India",
@@ -88,6 +89,12 @@ export default function ContributePage() {
         </div>
 
         <div className="contribute-actions" style={{ marginBottom: "2.5rem" }}>
+          <Link
+            href="/suggest"
+            className="action-link"
+          >
+            Fill Online Suggestion Form ↗
+          </Link>
           <a
             href="mailto:hello@creativetechindia.net?subject=Directory%20Addition%20or%20Update"
             className="action-link"

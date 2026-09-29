@@ -40,6 +40,12 @@ export default function Navbar() {
           >
             Contribute
           </Link>
+          <Link
+            href="/suggest"
+            className={`header-link ${pathname === "/suggest" ? "active" : ""}`}
+          >
+            Suggest
+          </Link>
           <a
             href="https://github.com/Creative-Tech-India/creative-tech-india.github.io"
             target="_blank"
