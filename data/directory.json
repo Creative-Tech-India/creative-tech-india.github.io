@@ -868,31 +868,31 @@
     "category": "Artist",
     "city": "Bangalore, Pan-India",
     "link": "https://non-linear.in/",
-    "description": "Creative technologist and generative artist exploring electronics, analog sound synthesis, and code.",
-    "tags": ["Generative Art", "Creative Coding", "Hardware"]
+    "description": "",
+    "tags": []
   },
   {
     "name": "Ankit Mallik - Spiralynk",
     "category": "Artist",
     "city": "Kolkata",
     "link": "https://www.spiralynk.com/",
-    "description": "Interdisciplinary artist and creative technologist designing real-time performable audiovisual systems.",
-    "tags": ["Audiovisual", "Live Coding", "Sound Art"]
+    "description": "",
+    "tags": []
   },
   {
     "name": "Lumen Prize",
     "category": "Award",
     "city": "Global",
     "link": "https://lumenprize.org/",
-    "description": "Global award celebrating art created with technology, from AI and interactive installations to VR/AR.",
-    "tags": ["Digital Art", "New Media"]
+    "description": "",
+    "tags": []
   },
   {
     "name": "S+T+ARTS",
     "category": "Organisation",
     "city": "Global",
     "link": "https://starts.eu/",
-    "description": "European initiative supporting innovation at the nexus of Science, Technology, and the ARTS.",
-    "tags": ["STEAM", "Research", "Residency"]
+    "description": "",
+    "tags": []
   }
 ]
