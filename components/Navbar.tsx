@@ -54,6 +54,14 @@ export default function Navbar() {
           >
             GitHub ↗
           </a>
+          <a
+            href="https://www.instagram.com/creativetech.india"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="header-link"
+          >
+            Instagram ↗
+          </a>
         </nav>
       </div>
     </header>

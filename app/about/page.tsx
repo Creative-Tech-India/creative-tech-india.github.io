@@ -48,34 +48,44 @@ const DISCIPLINES = [
 
 const APPLICATIONS = [
   {
-    title: "Events & Live Festivals",
-    desc: "Audio-reactive concert visuals, dynamic light choreography, architectural projection mapping, and festival art zones.",
-    tags: ["Concerts", "Art Festivals"],
+    title: "Commercial",
+    desc: "Live concert visuals, festival art zones, digital billboards, experiential retail pop-ups, and interactive brand activations that merge marketing with experiential technology.",
+    tags: ["Brand Activations", "Concerts & Festivals", "Experiential Retail", "Digital Billboards"],
   },
   {
-    title: "Retail & Brand Activations",
-    desc: "Pop-up brand experiences, 3D anamorphic displays, interactive kiosks, and experiential retail showrooms.",
-    tags: ["Pop-ups", "3D Displays"],
+    title: "Art",
+    desc: "New media artworks, gallery installations, generative audio-visual systems, livecoding / algorave performances, kinetic sculptures, and computational aesthetic expressions.",
+    tags: ["New Media Art", "Interactive Installations", "Live Coding", "Generative Art"],
   },
   {
-    title: "Museums & Cultural Heritage",
-    desc: "Interactive archival exhibits, 3D photogrammetry of artifacts, virtual walkthroughs, and kinetic installations.",
-    tags: ["Digital Museums", "Archives"],
+    title: "Design",
+    desc: "Spatial computing, media architecture, interactive environments, tangible interfaces, and context-aware physical computing designed for human interaction.",
+    tags: ["Interaction Design", "Spatial Computing", "Media Architecture", "Tangible UI"],
   },
   {
-    title: "Education & Academia",
-    desc: "Creative coding curricula, university design and computing labs, and interdisciplinary STEAM programs.",
-    tags: ["Design Schools", "Makerspaces"],
+    title: "Culture & DIY",
+    desc: "Grassroots maker culture, open-source hardware, 3D printing, circuit bending, bespoke musical instruments, e-textiles, and the fusion of traditional crafts with modern digital fabrication.",
+    tags: ["Open Hardware", "3D Printing", "DIY Electronics", "Digital Craft"],
   },
   {
-    title: "Architecture & Public Spaces",
-    desc: "Media facades, responsive building skins, kinetic sculptures, and interactive public civic installations.",
-    tags: ["Media Architecture", "Civic Spaces"],
+    title: "Education",
+    desc: "Creative coding curricula, academic design and computing labs, interactive museum learning, makerspaces, and interdisciplinary STEAM pedagogies for the next generation.",
+    tags: ["Creative Coding", "STEAM Pedagogy", "Design Schools", "Museum Learning"],
   },
   {
-    title: "Therapy & Accessibility",
-    desc: "Immersive VR for rehabilitation, multi-sensory snoezelen spaces, and tactile assistive tools.",
-    tags: ["Therapeutic VR", "Sensory Rooms"],
+    title: "Science",
+    desc: "Complex data visualization, environmental sensor networks, physics and biological simulations, biosensing, and creative interpretations of scientific phenomena.",
+    tags: ["Scientific Visualization", "Simulation", "Biosensing", "Environmental Data"],
+  },
+  {
+    title: "Research",
+    desc: "Formal academic and industry research into Human-Computer Interaction (HCI), computational creativity support tools, cognitive psychology, and speculative future technologies.",
+    tags: ["HCI Research", "Creativity Support", "Cognitive Studies", "Speculative Design"],
+  },
+  {
+    title: "Wellbeing",
+    desc: "Immersive VR for physical and cognitive rehabilitation, multi-sensory snoezelen rooms, assistive physical controllers, and neuroinclusive tools designed for care and accessibility.",
+    tags: ["Therapeutic VR", "Sensory Rooms", "Assistive Tech", "Neuroinclusion"],
   },
 ];
 
