@@ -151,11 +151,12 @@ export default function DirectoryPage() {
     <main className="container">
       {/* Hero */}
       <section className="hero">
-        <h1 className="hero-desc">
+        <h1 className="visually-hidden">Creative Tech India</h1>
+        <p className="hero-desc">
           An open directory of studios, experimental labs, collectives, and
           artists working with creative code, physical computing, and new media
           across India.
-        </h1>
+        </p>
       </section>
 
       {/* Controls Toolbar: Filters left, Search + City right */}
