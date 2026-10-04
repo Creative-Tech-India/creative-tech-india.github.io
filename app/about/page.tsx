@@ -35,8 +35,14 @@ const DISCIPLINES = [
   {
     title: "Object-Based Media",
     badge: "Adaptive",
-    desc: "A framework where digital content is broken down into structured, individual components that combine software-driven intelligence with context-aware devices. Rather than relying on fixed, pre-rendered video or audio files, this approach treats media assets as \"self-aware\" objects that dynamically self-organize and adapt in real time based on user interactions, environmental data, and screen capabilities.",
+    desc: "A framework that deconstructs media into structured, independent \"objects\" based on semantic metadata. This approach treats audio, video, and graphics as self-aware, modular assets that can dynamically assemble by adapting narrative and layout in real time based on environmental context.",
     tags: ["Context-Aware", "Dynamic Assets", "Real-Time Adaptation"],
+  },
+  {
+    title: "Tangible Media",
+    badge: "Physical",
+    desc: "Physical mediums that anchor digital or creative works into material substrates. By giving stable, tactile form to otherwise transient data, this approach allows content to be directly manipulated, multi-sensorially experienced, and archived through physical and embodied artifacts.",
+    tags: ["Physical Computing", "Tactile UI", "Embodied Artifacts"],
   },
 ];
 
