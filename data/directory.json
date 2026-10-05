@@ -934,5 +934,37 @@
     "link": "https://www.elsewhere-india.com/",
     "description": "",
     "tags": []
+  },
+  {
+    "name": "Prix Ars Electronica",
+    "category": "Award",
+    "city": "International",
+    "link": "https://ars.electronica.art/prix/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "Beatnyk",
+    "category": "Artist",
+    "city": "Delhi",
+    "link": "https://beatnyk.github.io/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "qareebi/ali",
+    "category": "Artist",
+    "city": "Bangalore",
+    "link": "https://www.instagram.com/qaree.bi",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "Amitesh Grover",
+    "category": "Artist",
+    "city": "Delhi",
+    "link": "https://amiteshgrover.com/",
+    "description": "",
+    "tags": []
   }
 ]
