@@ -528,9 +528,10 @@ tbody tr:hover {
   margin-bottom: 0.4rem;
 }
 
-.about-hero h1 {
+.about-hero h1,
+.about-hero h2 {
   font-family: var(--font-mono);
-  font-size: clamp(1.25rem, 2.75vw, 1.65rem);
+  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
   font-weight: 700;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -543,7 +544,18 @@ tbody tr:hover {
   font-size: 0.85rem;
   color: var(--text-muted);
   line-height: 1.5;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.lead-text a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease;
+}
+
+.lead-text a:hover {
+  color: var(--accent);
 }
 
 .def-card {

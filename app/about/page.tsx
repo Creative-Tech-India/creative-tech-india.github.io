@@ -94,52 +94,36 @@ export default function AboutPage() {
     <main className="container">
       {/* Hero */}
       <section className="about-hero">
-        <div className="hero-meta">PRIMER</div>
-        <h1>What is Creative Technology?</h1>
+        <h1>Creative Tech India</h1>
         <p className="lead-text">
-          Creative Technology is the interdisciplinary convergence of art,
-          design, and computer science. Practitioners use code, electronics, and
-          algorithms as creative mediums to design interactive and sensory
-          experiences.
+          Creative Tech India is a community of practitioners, researchers,
+          organisations and enthusiasts involved in various media explorations
+          and experimentation across India providing an open space to connect,
+          learn, explore and showcase. We aim to strengthen and promote the
+          creative tech ecosystem across India.
         </p>
-
-        <div className="def-card">
-          <div className="def-quote">
-            &ldquo;Designing the invisible dialogue between humans, machines,
-            and physical environments.&rdquo;
-          </div>
-          <div className="def-byline">Landscape Definition</div>
-        </div>
+        <p className="lead-text">
+          Write to{" "}
+          <a href="mailto:hello@creativetechindia.net">
+            hello@creativetechindia.net
+          </a>{" "}
+          for connecting with us. Open for suggestions and contributions.
+        </p>
       </section>
 
-      {/* Mission & Vision */}
+      {/* Definition & Core Disciplines */}
       <section>
         <div className="section-header">
-          <span className="section-tag">PURPOSE</span>
-          <h2 className="section-title">Mission & Vision</h2>
+          <h2 className="section-title">What is Creative Technology?</h2>
+          <p className="section-desc" style={{ maxWidth: "720px", marginBottom: "1rem" }}>
+            Creative Technology is the interdisciplinary convergence of art,
+            design, music, research, technology, AI, web, and computation.
+            Practitioners use code, electronics, materials, and algorithms as
+            creative mediums to create interactive and sensory experiences.
+          </p>
         </div>
 
-        <div className="purpose-grid">
-          <div className="purpose-item">
-            <div className="purpose-label">Mission</div>
-            <p className="purpose-text">
-              To promote creative technology in all its forms across India.
-            </p>
-          </div>
-          <div className="purpose-item">
-            <div className="purpose-label">Vision</div>
-            <p className="purpose-text">
-              To make creative experimentation a mainstream medium of cultural
-              and technological expression across India.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Core Disciplines */}
-      <section>
-        <div className="section-header">
-          <span className="section-tag">DISCIPLINES</span>
+        <div className="section-header" style={{ borderTop: "none", paddingTop: "0.25rem" }}>
           <h2 className="section-title">Core Disciplines</h2>
           <p className="section-desc">
             Key technical and artistic domains driving the field:
@@ -169,7 +153,6 @@ export default function AboutPage() {
       {/* Application Domains */}
       <section>
         <div className="section-header">
-          <span className="section-tag">APPLICATIONS</span>
           <h2 className="section-title">Application Domains</h2>
           <p className="section-desc">
             Where creative technology is deployed in industry and culture:
