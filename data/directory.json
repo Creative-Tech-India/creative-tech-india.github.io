@@ -256,9 +256,9 @@
     "tags": []
   },
   {
-    "name": "Quick sand studio",
-    "category": "Organisation",
-    "city": "Goa",
+    "name": "Quick Sand Studio",
+    "category": "Studio",
+    "city": "Pan-India",
     "link": "https://quicksand.co.in/",
     "description": "",
     "tags": []
@@ -908,6 +908,30 @@
     "category": "Organisation",
     "city": "Mumbai",
     "link": "https://www.iict.org/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "WIP Labs",
+    "category": "Organisation",
+    "city": "Delhi",
+    "link": "https://wipcollective.in/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "Kochi Muziris Biennale",
+    "category": "Event",
+    "city": "Kochi",
+    "link": "https://www.kochimuzirisbiennale.org/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "Elsewhere in India",
+    "category": "Organisation",
+    "city": "Pan-India",
+    "link": "https://www.elsewhere-india.com/",
     "description": "",
     "tags": []
   }
