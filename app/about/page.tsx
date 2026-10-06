@@ -12,7 +12,7 @@ const DISCIPLINES = [
     title: "Immersive Media",
     badge: "Spatial",
     desc: "Digital spaces or platforms that envelop the viewer to create a feeling of presence. This includes Virtual Reality (VR), Augmented Reality (AR), Mixed Reality (MR), and 360-degree interactive environments.",
-    tags: ["VR", "AR", "MR", "360° Environments"],
+    tags: ["VR", "AR", "MR", "Immersive experiences", "spatial audio soundscapes"],
   },
   {
     title: "Synthetic Media",
@@ -33,10 +33,10 @@ const DISCIPLINES = [
     tags: ["BioArt", "Genetic Art", "Organic Systems"],
   },
   {
-    title: "Object-Based Media",
+    title: "Interactive Media",
     badge: "Adaptive",
-    desc: "A framework that deconstructs media into structured, independent \"objects\" based on semantic metadata. This approach treats audio, video, and graphics as self-aware, modular assets that can dynamically assemble by adapting narrative and layout in real time based on environmental context.",
-    tags: ["Context-Aware", "Dynamic Assets", "Real-Time Adaptation"],
+    desc: "Media that can be defined as independent entities that respond to actions based on user, external data or environmental input. This approach treats audio, video, and content as self-aware, modular assets that can dynamically react by adapting narrative and layout in real time based on broader established  context.",
+    tags: ["Interactive Data visualizations", "Sensor-based installations", "Videogames","Hypermedia narratives", "Responsive environments"],
   },
   {
     title: "Tangible Media",
