@@ -966,5 +966,93 @@
     "link": "https://amiteshgrover.com/",
     "description": "",
     "tags": []
+  },
+  {
+    "name": "Trisha Chabbra",
+    "category": "Artist",
+    "city": "Bangalore",
+    "link": "https://triishac.com/about",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "UnboxLabs/Futures",
+    "category": "Community",
+    "city": "Goa",
+    "link": "https://www.instagram.com/unboxgoa/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "Ananya Miska",
+    "category": "Artist",
+    "city": "Bangalore",
+    "link": "https://ananyamiska.work/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "Kedar Benjamin",
+    "category": "Artist",
+    "city": "Bangalore",
+    "link": "http://www.benjometry.com/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "Vaibhav Vivek",
+    "category": "Artist",
+    "city": "Hyderabad, Bangalore",
+    "link": "http://vaibhavvivek.com/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "Chaitali Kulkarni",
+    "category": "Artist",
+    "city": "Bangalore",
+    "link": "http://chaitalikulkarni13.wixsite.com/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "Niraj Pangurkar",
+    "category": "Artist",
+    "city": "Bangalore",
+    "link": "https://www.instagram.com/generated.xyz/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "Priyanshu",
+    "category": "Artist",
+    "city": "Bangalore",
+    "link": "http://aspiz.uk/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "Vedant Manwadkar",
+    "category": "Artist",
+    "city": "Bangalore",
+    "link": "https://www.vedepana.com/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "Priyanka Kolluru",
+    "category": "Artist",
+    "city": "Bangalore",
+    "link": "https://priyankakolluru.figma.site/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "ArtScience BLR",
+    "category": "Studio",
+    "city": "Bangalore",
+    "link": "https://artscienceblr.org",
+    "description": "",
+    "tags": []
   }
 ]
