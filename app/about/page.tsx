@@ -12,7 +12,7 @@ const DISCIPLINES = [
     title: "Immersive Media",
     badge: "Spatial",
     desc: "Digital spaces or platforms that envelop the viewer to create a feeling of presence. This includes Virtual Reality (VR), Augmented Reality (AR), Mixed Reality (MR), and 360-degree interactive environments.",
-    tags: ["VR", "AR", "MR", "Immersive experiences", "spatial audio soundscapes"],
+    tags: ["VR", "AR", "MR", "Immersive experiences"],
   },
   {
     title: "Synthetic Media",
