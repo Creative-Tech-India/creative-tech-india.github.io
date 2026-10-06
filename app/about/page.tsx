@@ -36,7 +36,7 @@ const DISCIPLINES = [
     title: "Interactive Media",
     badge: "Adaptive",
     desc: "Media that can be defined as independent entities that respond to actions based on user, external data or environmental input. This approach treats audio, video, and content as self-aware, modular assets that can dynamically react by adapting narrative and layout in real time based on broader established  context.",
-    tags: ["Interactive Data visualizations", "Sensor-based installations", "Videogames","Hypermedia narratives", "Responsive environments"],
+    tags: ["DataViz", "Installation art", "Hypermedia narratives"],
   },
   {
     title: "Tangible Media",
