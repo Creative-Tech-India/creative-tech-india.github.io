@@ -29,6 +29,12 @@ export default function Navbar() {
             Directory
           </Link>
           <Link
+            href="/calendar"
+            className={`header-link ${pathname === "/calendar" ? "active" : ""}`}
+          >
+            Calendar
+          </Link>
+          <Link
             href="/about"
             className={`header-link ${pathname === "/about" ? "active" : ""}`}
           >
