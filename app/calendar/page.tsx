@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import eventsRaw from "@/data/events.json";
 import { CalendarEvent } from "@/types/event";
 
@@ -93,10 +92,7 @@ export default function CalendarPage() {
               We are curating and preparing the event schedule. Soon you&apos;ll be able to explore dates,
               times, locations, and registration links for creative technology gatherings across India.
             </p>
-            <div style={{ display: "flex", gap: "1.5rem", flexWrap: "wrap" }}>
-              <Link href="/suggest" className="action-link">
-                Suggest an Event ↗
-              </Link>
+            <div>
               <a
                 href="mailto:hello@creativetechindia.net?subject=Upcoming%20Event%20Submission"
                 className="action-link"
@@ -239,9 +235,6 @@ export default function CalendarPage() {
               </p>
             </div>
             <div>
-              <Link href="/suggest" className="action-link" style={{ marginRight: "1.5rem" }}>
-                Suggest via Form ↗
-              </Link>
               <a
                 href="mailto:hello@creativetechindia.net?subject=Upcoming%20Event%20Submission"
                 className="action-link"
