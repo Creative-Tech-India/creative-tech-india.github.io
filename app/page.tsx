@@ -153,9 +153,10 @@ export default function DirectoryPage() {
       <section className="hero">
         <h1 className="visually-hidden">Creative Tech India</h1>
         <p className="hero-desc">
-          An open directory of studios, experimental labs, collectives, and
-          artists working with creative code, physical computing, and new media
-          across India.
+          A community of creative technology practices in India. This is an open
+          directory of studios, experimental labs, collectives, and artists
+          working with creative code, physical computing, and new media across
+          India.
         </p>
       </section>
 

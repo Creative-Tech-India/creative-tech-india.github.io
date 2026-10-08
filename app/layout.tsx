@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Creative Tech India",
   },
   description:
-    "An open directory of studios, experimental labs, collectives, and artists working with creative code, physical computing, and new media across India.",
+    "A community of creative technology practices in India. This is an open directory of studios, experimental labs, collectives, and artists working with creative code, physical computing, and new media across India.",
   applicationName: "Creative Tech India",
   icons: {
     icon: [
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Creative Tech India",
     description:
-      "An open directory of studios, experimental labs, collectives, and artists working with creative code, physical computing, and new media across India.",
+      "A community of creative technology practices in India. This is an open directory of studios, experimental labs, collectives, and artists working with creative code, physical computing, and new media across India.",
     url: "https://creativetechindia.net",
     siteName: "Creative Tech India",
     type: "website",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Creative Tech India",
     description:
-      "An open directory of studios, experimental labs, collectives, and artists working with creative code, physical computing, and new media across India.",
+      "A community of creative technology practices in India. This is an open directory of studios, experimental labs, collectives, and artists working with creative code, physical computing, and new media across India.",
   },
 };
 
@@ -71,7 +71,7 @@ const jsonLd = {
   ],
   url: "https://creativetechindia.net",
   description:
-    "An open directory of studios, experimental labs, collectives, and artists working with creative code, physical computing, and new media across India.",
+    "A community of creative technology practices in India. This is an open directory of studios, experimental labs, collectives, and artists working with creative code, physical computing, and new media across India.",
 };
 
 export default function RootLayout({
