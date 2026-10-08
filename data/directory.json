@@ -1062,5 +1062,77 @@
     "link": "https://www.houseofkatha.co/",
     "description": "",
     "tags": []
+  },
+  {
+    "name": "Sangarshanan",
+    "category": "Artist",
+    "city": "Bangalore",
+    "link": "https://sangarshanan.com/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "Vivek Nair",
+    "category": "Artist",
+    "city": "Indore",
+    "link": "https://www.instagram.com/thisis_arandomusername/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "Arjun",
+    "category": "Artist",
+    "city": "Bangalore",
+    "link": "https://arjunmakesthings.github.io/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "Heerdyes Mahapatro",
+    "category": "Artist",
+    "city": "Bangalore",
+    "link": "https://heerdyes.com/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "Simar",
+    "category": "Artist",
+    "city": "Bangalore",
+    "link": "https://laguna-dream.github.io/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "Ajay Menon",
+    "category": "Artist",
+    "city": "Bangalore",
+    "link": "https://ajm0.dev/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "Ranjith Hegde",
+    "category": "Artist",
+    "city": "Bidarkan",
+    "link": "https://mayaflux.org/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "Satyarth",
+    "category": "Artist",
+    "city": "Pune",
+    "link": "https://satyarth.me/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "Kiran",
+    "category": "Artist",
+    "city": "Bangalore",
+    "link": "https://www.instagram.com/xxkir4nxx",
+    "description": "",
+    "tags": []
   }
 ]
