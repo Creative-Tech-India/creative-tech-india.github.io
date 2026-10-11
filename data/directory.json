@@ -146,7 +146,7 @@
   {
     "name": "Sensistan",
     "category": "Organisation",
-    "city": "Goa, Bangalore",
+    "city": "Goa",
     "link": "https://www.sensistan.space/",
     "description": "",
     "tags": []
@@ -188,14 +188,6 @@
     "category": "Organisation",
     "city": "Mumbai",
     "link": "https://designforfuturelab.com/",
-    "description": "",
-    "tags": []
-  },
-  {
-    "name": "Sensistan",
-    "category": "Organisation",
-    "city": "Goa, Bangalore",
-    "link": "https://www.sensistan.space/",
     "description": "",
     "tags": []
   },
@@ -332,14 +324,6 @@
     "category": "Community",
     "city": "Mumbai, Goa",
     "link": "https://pifi.co.in/",
-    "description": "",
-    "tags": []
-  },
-  {
-    "name": "Sensistan",
-    "category": "Community",
-    "city": "Goa",
-    "link": "https://sensistan.space/",
     "description": "",
     "tags": []
   },
@@ -1132,6 +1116,62 @@
     "category": "Artist",
     "city": "Bangalore",
     "link": "https://www.instagram.com/xxkir4nxx",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "Ujjwal Agarwal",
+    "category": "Artist",
+    "city": "Bangalore",
+    "link": "https://www.ujjwalagarwal.com/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "HH Art spaces",
+    "category": "Community",
+    "city": "Goa",
+    "link": "https://www.hhartspacesfoundation.org/about",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "TinkerSpace",
+    "category": "Community",
+    "city": "Kochi",
+    "link": "https://tinkerhub.org/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "SuperFabLab Kerala",
+    "category": "Community",
+    "city": "Kochi",
+    "link": "https://startupmission.kerala.gov.in/fablab",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "CodeFarm",
+    "category": "Program",
+    "city": "Kolkata",
+    "link": "https://codefarm.art/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "Karthik Doneti",
+    "category": "Artist",
+    "city": "Bangalore",
+    "link": "https://www.instagram.com/codebale/",
+    "description": "",
+    "tags": []
+  },
+  {
+    "name": "Zoh",
+    "category": "Artist",
+    "city": "Bangalore",
+    "link": "https://www.instagram.com/notreallyzoh/",
     "description": "",
     "tags": []
   }
